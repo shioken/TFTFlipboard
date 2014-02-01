@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TSTFlipboard.h"
 
 @interface TSTViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet TSTFlipboard* flipboard;
 @end

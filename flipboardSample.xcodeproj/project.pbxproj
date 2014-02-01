@@ -21,6 +21,11 @@
 		E45C1857189CF6CD00F01C64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45C1839189CF6CD00F01C64 /* UIKit.framework */; };
 		E45C185F189CF6CD00F01C64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E45C185D189CF6CD00F01C64 /* InfoPlist.strings */; };
 		E45C1861189CF6CD00F01C64 /* flipboardSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45C1860189CF6CD00F01C64 /* flipboardSampleTests.m */; };
+		E45C186D189CF6F300F01C64 /* TSTFlipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = E45C186C189CF6F300F01C64 /* TSTFlipboard.m */; };
+		E45C188A189D0FC000F01C64 /* monalisa.png in Resources */ = {isa = PBXBuildFile; fileRef = E45C1888189D0FC000F01C64 /* monalisa.png */; };
+		E45C188B189D0FC000F01C64 /* monalisa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E45C1889189D0FC000F01C64 /* monalisa@2x.png */; };
+		E45C188E189D183200F01C64 /* rena.png in Resources */ = {isa = PBXBuildFile; fileRef = E45C188C189D183200F01C64 /* rena.png */; };
+		E45C188F189D183200F01C64 /* rena@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E45C188D189D183200F01C64 /* rena@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		E45C185C189CF6CD00F01C64 /* flipboardSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "flipboardSampleTests-Info.plist"; sourceTree = "<group>"; };
 		E45C185E189CF6CD00F01C64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E45C1860189CF6CD00F01C64 /* flipboardSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flipboardSampleTests.m; sourceTree = "<group>"; };
+		E45C186B189CF6F300F01C64 /* TSTFlipboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSTFlipboard.h; path = flipboard/TSTFlipboard.h; sourceTree = "<group>"; };
+		E45C186C189CF6F300F01C64 /* TSTFlipboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSTFlipboard.m; path = flipboard/TSTFlipboard.m; sourceTree = "<group>"; };
+		E45C1888189D0FC000F01C64 /* monalisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monalisa.png; sourceTree = "<group>"; };
+		E45C1889189D0FC000F01C64 /* monalisa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monalisa@2x.png"; sourceTree = "<group>"; };
+		E45C188C189D183200F01C64 /* rena.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rena.png; sourceTree = "<group>"; };
+		E45C188D189D183200F01C64 /* rena@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rena@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,8 @@
 		E45C183B189CF6CD00F01C64 /* flipboardSample */ = {
 			isa = PBXGroup;
 			children = (
+				E45C1887189D0FAD00F01C64 /* resources */,
+				E45C186A189CF6D400F01C64 /* flipboard */,
 				E45C1844189CF6CD00F01C64 /* TSTAppDelegate.h */,
 				E45C1845189CF6CD00F01C64 /* TSTAppDelegate.m */,
 				E45C1847189CF6CD00F01C64 /* Main.storyboard */,
@@ -150,6 +163,26 @@
 				E45C185D189CF6CD00F01C64 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E45C186A189CF6D400F01C64 /* flipboard */ = {
+			isa = PBXGroup;
+			children = (
+				E45C186B189CF6F300F01C64 /* TSTFlipboard.h */,
+				E45C186C189CF6F300F01C64 /* TSTFlipboard.m */,
+			);
+			name = flipboard;
+			sourceTree = "<group>";
+		};
+		E45C1887189D0FAD00F01C64 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E45C188C189D183200F01C64 /* rena.png */,
+				E45C188D189D183200F01C64 /* rena@2x.png */,
+				E45C1888189D0FC000F01C64 /* monalisa.png */,
+				E45C1889189D0FC000F01C64 /* monalisa@2x.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +262,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45C188B189D0FC000F01C64 /* monalisa@2x.png in Resources */,
 				E45C184E189CF6CD00F01C64 /* Images.xcassets in Resources */,
 				E45C1840189CF6CD00F01C64 /* InfoPlist.strings in Resources */,
+				E45C188F189D183200F01C64 /* rena@2x.png in Resources */,
 				E45C1849189CF6CD00F01C64 /* Main.storyboard in Resources */,
+				E45C188A189D0FC000F01C64 /* monalisa.png in Resources */,
+				E45C188E189D183200F01C64 /* rena.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +290,7 @@
 				E45C1846189CF6CD00F01C64 /* TSTAppDelegate.m in Sources */,
 				E45C184C189CF6CD00F01C64 /* TSTViewController.m in Sources */,
 				E45C1842189CF6CD00F01C64 /* main.m in Sources */,
+				E45C186D189CF6F300F01C64 /* TSTFlipboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
